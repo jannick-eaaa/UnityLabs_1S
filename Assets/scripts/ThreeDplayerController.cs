@@ -72,7 +72,7 @@ public class ThreeDplayerController : MonoBehaviour
         // Når vi bevæger os, vil vi gerne gøre det relativt til
         // hvor spilleren (kameraet) kigger hen (forward vector, blå pil i Editor)
         reusableVector = eyes.forward;
-        reusableVector.y = 0;
+        reusableVector.y = 0;           // W (keyboard 1) -> controller (0 ... 1)
         Vector3 move = reusableVector * moveDirection.z * moveSpeed * Time.fixedDeltaTime;
 
         // Left/Right X relative to camera
