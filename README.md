@@ -70,3 +70,16 @@ Ressourcer kan findes her:
   - Assets/scripts/RaycastSurvival.cs
   - Assets/scripts/SurvivalHandler.cs
   - Assets/scripts/WaterHandler.cs
+
+### Navmesh & Terrain Editor
+
+Ressourcer kan findes her:
+
+- Scene(r):
+
+  - Assets/Scenes/labs/NavmeshLab.unity
+  - Assets/Scenes/labs/TerrainLab.unity
+
+- Script(s):
+
+  - Assets/scripts/AgentController.cs
