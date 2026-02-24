@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Holy : MonoBehaviour
 {
-    public Light lightUp;
-    public AudioSource holyAudio;
+    Light lightUp;
+    AudioSource holyAudio;
     // Start is 
     // lcalled once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,5 +23,10 @@ public class Holy : MonoBehaviour
     {
         lightUp.enabled = true;
         holyAudio.Play();
+    }
+    void OnTriggerExit(Collider collider)
+    {
+        lightUp.enabled = false;
+        holyAudio.Stop();
     }
 }
