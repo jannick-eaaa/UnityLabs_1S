@@ -5,10 +5,12 @@ using UnityEngine.InputSystem;
 public class AgentController : MonoBehaviour
 {
     private NavMeshAgent agent;
+    private Light flashLight;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        flashLight = GetComponentInChildren<Light>();
     }
 
     void Update()
@@ -21,6 +23,11 @@ public class AgentController : MonoBehaviour
             {
                 agent.SetDestination(hit.point);
             }
+        }
+
+        if (Keyboard.current.fKey.wasPressedThisFrame)
+        {
+            flashLight.enabled = !flashLight.enabled;
         }
     }
 }
