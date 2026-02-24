@@ -400,6 +400,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -462981019419857548, guid: e13d489f5b95a45beae86aefba26bd13, type: 3}
+<<<<<<< HEAD
 --- !u!1 &1013843001
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +432,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1279352586}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of f3bcc6f (just a little bean baby)
 --- !u!1 &1279352585
 GameObject:
   m_ObjectHideFlags: 0
