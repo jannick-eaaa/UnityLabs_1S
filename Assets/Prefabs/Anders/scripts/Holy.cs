@@ -3,12 +3,14 @@ using UnityEngine;
 public class Holy : MonoBehaviour
 {
     public Light lightUp;
+    public AudioSource holyAudio;
     // Start is 
     // lcalled once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         lightUp = GetComponent<Light>();
         lightUp.enabled = false;
+        holyAudio = GetComponent<AudioSource>();
 
     }
 
@@ -17,8 +19,9 @@ public class Holy : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(Collider collidor)
+    void OnTriggerEnter(Collider collider)
     {
         lightUp.enabled = true;
+        holyAudio.Play();
     }
 }
